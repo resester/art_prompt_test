@@ -1,0 +1,13 @@
+# directly tied to GENRE input
+
+#TESTING
+# composition_dict = {"sci-fi": ["sci-fi"], "action": ["action"], "horror": ["horror"], "adventure": ["adventure"]}
+
+
+composition_dict = {"sci-fi": ["a '50/50 composition'", "a '10/90 composition'", "a '20/30 composition'", "a '10/30 composition'",
+                               "an 'arrival shot'", "a 'close up shot'"],
+                    "action": ["a '10/80 composition'", "a '20/30 composition'", "a '10/30 composition'", "an 'altarpiece shot'",
+                               "a 'big vs small shot'"],
+                    "horror": ["a '50/50 composition'", "a '10/90 composition'", "a 'big vs small shot'", "a 'looking thru shot'"],
+                    "adventure" : ["a '10/90 composition'", "a '20/30 composition'", "a '10/30 composition'", "an 'arrival shot'",
+                                   "an 'altarpiece shot'", "a 'big vs small shot'"]}
