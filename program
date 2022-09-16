@@ -1,0 +1,86 @@
+import random
+from creature_output import creature_list
+from mood_output import adj_dict
+from comp_output import composition_dict
+from random_output import noun_list
+
+# RANDOM OUTPUT FUNCTIONS:
+def key_1():
+    return random.choice(creature_list)
+
+
+def key_2():
+    return random.choice(noun_list)
+
+
+def key_3(mood):
+    if mood.lower() == "happy":
+        return random.choice(adj_dict["happy"])
+    if mood.lower() == "sad":
+        return random.choice(adj_dict["sad"])
+    if mood.lower() == "angry":
+        return random.choice(adj_dict["angry"])
+    if mood.lower() == "scared":
+        return random.choice(adj_dict["scared"])
+    if mood.lower() == "mischievous":
+        return random.choice(adj_dict["mischievous"])
+
+
+def comp(genre_choice):
+    if genre_choice.lower() == "sci-fi":
+        return random.choice(composition_dict["sci-fi"])
+    if genre_choice.lower() == "sci fi":
+        return random.choice(composition_dict["sci-fi"])
+    if genre_choice.lower() == "action":
+        return random.choice(composition_dict["action"])
+    if genre_choice.lower() == "horror":
+        return random.choice(composition_dict["horror"])
+    if genre_choice.lower() == "adventure":
+        return random.choice(composition_dict["adventure"])
+
+
+def key_binder(list):
+    for item in list:
+        print(item)
+    return ""
+
+
+three_keys = []
+
+
+# DIALOGUE
+genre_choice = input("Pick your genre: Sci-fi, action, horror, or adventure?  ")
+accepted_input = ["sci fi", "sci-fi", "action", "horror", "adventure"]
+while genre_choice.lower() not in accepted_input:
+    genre_choice = input("Please choose from only one of the options. ")
+
+print("")
+
+mood_choice = input("Pick the mood you want to convey: happy, sad, angry, scared, or mischievous? ")
+while mood_choice.lower() not in ("happy", "sad", "angry", "scared", "mischievous"):
+    mood_choice = input("Please choose from only one of the options. ")
+
+if mood_choice.lower() == "happy":
+    three_keys.append(key_3("happy"))
+if mood_choice.lower() == "sad":
+    three_keys.append(key_3("sad"))
+if mood_choice.lower() == "angry":
+    three_keys.append(key_3("angry"))
+if mood_choice.lower() == "scared":
+    three_keys.append(key_3("scared"))
+if mood_choice.lower() == "mischievous":
+    three_keys.append(key_3("mischievous"))
+
+print("")
+
+# Adding final keys to the list
+three_keys.append(key_2())
+three_keys.append(key_1())
+
+three_keys.reverse()
+
+print("")
+print("Your next piece will be utilizing " + comp(genre_choice) + " and include these three keys:")
+print(key_binder(three_keys))
+
+three_keys.clear()
