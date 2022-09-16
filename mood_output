@@ -1,0 +1,19 @@
+# directly tied to MOOD input
+# TESTING
+# adj_dict = {"happy": ["happy feet"], "sad": ["sadness"], "angry": ["anger"], "scared": ["scare"], "mischievous": ["mischief"]}
+
+
+adj_dict = {"happy": ["peaceful", "open", "daze", "goofy", "microscopic", "equanimous", "western", "eastern", "wide",
+                      "anthropomorphic", "spherical", "digital", "cute", "underwater", "gigantic", "subterranean",
+                      "luminous", "ancient"],
+            "sad": ["soaked", "melting", "blue", "dripping", "melodramatic", "western", "eastern", "toothless",
+                    "anthropomorphic", "thin", "spherical", "digital", "thorny", "cute", "taciturn", "underwater",
+                    "fragile", "subterranean", "ancient", "deep sea"],
+            "angry": ["flaming", "raging", "painful", "dramatic", "adamant", "ravenous", "western", "eastern",
+                      "anthropomorphic", "bad-ass", "digital", "thorny", "cute", "taciturn", "caustic", "gigantic",
+                      "subterranean", "ancient"],
+            "scared": ["dripping", "creepy", "microscopic", "wide", "toothless", "anthropomorphic", "thin", "webbed",
+                       "spherical", "serpentine", "digital", "thorny", "taciturn", "underwater", "fragile",
+                       "subterranean", "ancient", "deep sea"],
+            "mischievous": ["daze", "goofy", "creepy", "adamant", "western", "eastern", "wide", "toothless",
+                            "anthropomorphic", "serpentine", "digital", "thorny", "cute", "subterranean", "ancient"]}
