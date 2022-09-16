@@ -1,0 +1,38 @@
+# pulled at random
+creature_list = []
+
+def list_addition(creature):
+    creature_list.append(creature)
+    return creature_list
+
+list_addition("iguana")
+list_addition("rabbit")
+list_addition("herring")
+list_addition("wolf")
+list_addition("brachiosaurus")
+list_addition("koala")
+list_addition("bear")
+list_addition("lion")
+list_addition("capybara")
+list_addition("cephalopod")
+list_addition("fossa")
+list_addition("arachnid")
+list_addition("raptor")
+list_addition("deer")
+list_addition("bird")
+list_addition("rodent")
+list_addition("lizard")
+list_addition("sponge")
+list_addition("reptile")
+list_addition("giraffe")
+list_addition("slug")
+list_addition("worm")
+list_addition("jellyfish")
+list_addition("cat")
+list_addition("omnivore")
+list_addition("vertebrate")
+list_addition("human")
+list_addition("mollusk")
+list_addition("sea anemone")
+list_addition("carnivore")
+list_addition("herbivore")
